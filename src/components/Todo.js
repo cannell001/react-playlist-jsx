@@ -5,7 +5,7 @@ export default class TodoComponent extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-            todos: ['wash the dishes', 'cut the cheese', 'take a nap']
+            todos: ['wash dishes', 'cut the cheese', 'take a nap']
         };
     }
     //getInitialState
