@@ -3,6 +3,6 @@ import { render } from 'react-dom';
 import { TodoComponent } from './app/ToDo';
 
 render(
-	<TodoComponent/>,
+	<TodoComponent msg="who cut the cheese"/>,
 	document.getElementById('todo-wrapper')
 )
