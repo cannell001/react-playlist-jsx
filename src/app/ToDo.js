@@ -1,13 +1,13 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React, { Component } from 'react';
 
 //Create a component using ES6 Class Syntax
-export class TodoComponent extends React.Component{
+export class TodoComponent extends Component{
     render(){
         return(
             <div>
-            <h1>Using ES6 Classes with props no semis</h1>
-            <p>{this.props.msg}</p>
+                <p><strong>Cheese name: </strong> {this.props.cheese.name}</p>
+                <p><strong>Cheese smell factor: </strong> {this.props.cheese.smellFactor}</p>
+                <p><strong>Cheese price: </strong>£{this.props.cheese.price}</p>
             </div>
         )
     }
