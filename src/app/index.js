@@ -1,1 +1,1 @@
-alert('it works');
+alert('Webpack 4 works');
