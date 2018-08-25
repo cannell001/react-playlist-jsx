@@ -5,15 +5,18 @@ export default class TodoComponent extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-            todos: ['drink tea', 'wash the dishes', 'cut the cheese', 'take a nap']
+            todos: ['drink tea', 'walk the dog', 'wash the dishes', 'cut the cheese', 'take a nap']
         };
     }
     //getInitialState
     render(){
 		var todos = this.state.todos;
-        todos = todos.map((item, index) => <li>{item}...!</li>);
-
-		return(
+        todos = todos.map(function(item, index){
+            return(
+                    <li>`{item}...!`</li>
+            );
+        });
+        return(
             <div id="todo-list">
                 <p>React stuff goes here...</p>
 				<ul>{todos}</ul>
